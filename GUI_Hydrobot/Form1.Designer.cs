@@ -35,29 +35,31 @@
             this.label2 = new System.Windows.Forms.Label();
             this.gmap = new GMap.NET.WindowsForms.GMapControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Stop_Motors_btn = new System.Windows.Forms.Button();
+            this.MotorB_groupBox = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.MotorB_Speed_TextBox = new System.Windows.Forms.TextBox();
+            this.MotorB_Right_btn = new System.Windows.Forms.Button();
+            this.MotorB_Left_btn = new System.Windows.Forms.Button();
+            this.MotorA_groupBox = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.MotorA_Speed_TextBox = new System.Windows.Forms.TextBox();
+            this.MotorA_Left_btn = new System.Windows.Forms.Button();
+            this.MotorA_Right_btn = new System.Windows.Forms.Button();
             this.Port_Combobox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.OpenPort_btn = new System.Windows.Forms.Button();
             this.ClosePort_btn = new System.Windows.Forms.Button();
             this.Status_Label = new System.Windows.Forms.Label();
             this.General_Textbox = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.MotorA_Left_btn = new System.Windows.Forms.Button();
-            this.MotorA_Right_btn = new System.Windows.Forms.Button();
-            this.MotorA_groupBox = new System.Windows.Forms.GroupBox();
-            this.MotorB_groupBox = new System.Windows.Forms.GroupBox();
-            this.MotorB_Left_btn = new System.Windows.Forms.Button();
-            this.MotorB_Right_btn = new System.Windows.Forms.Button();
-            this.MotorA_Speed_TextBox = new System.Windows.Forms.TextBox();
-            this.MotorB_Speed_TextBox = new System.Windows.Forms.TextBox();
-            this.Stop_Motors_btn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.MotorA_groupBox.SuspendLayout();
             this.MotorB_groupBox.SuspendLayout();
+            this.MotorA_groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -141,6 +143,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -148,6 +151,128 @@
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Graphs";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.Stop_Motors_btn);
+            this.tabPage3.Controls.Add(this.MotorB_groupBox);
+            this.tabPage3.Controls.Add(this.MotorA_groupBox);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(704, 416);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "Motor Control";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // Stop_Motors_btn
+            // 
+            this.Stop_Motors_btn.Location = new System.Drawing.Point(51, 125);
+            this.Stop_Motors_btn.Name = "Stop_Motors_btn";
+            this.Stop_Motors_btn.Size = new System.Drawing.Size(48, 42);
+            this.Stop_Motors_btn.TabIndex = 5;
+            this.Stop_Motors_btn.Text = "Stop";
+            this.Stop_Motors_btn.UseVisualStyleBackColor = true;
+            this.Stop_Motors_btn.Click += new System.EventHandler(this.Stop_Motors_btn_Click);
+            // 
+            // MotorB_groupBox
+            // 
+            this.MotorB_groupBox.Controls.Add(this.label4);
+            this.MotorB_groupBox.Controls.Add(this.MotorB_Speed_TextBox);
+            this.MotorB_groupBox.Controls.Add(this.MotorB_Right_btn);
+            this.MotorB_groupBox.Controls.Add(this.MotorB_Left_btn);
+            this.MotorB_groupBox.Location = new System.Drawing.Point(150, 18);
+            this.MotorB_groupBox.Name = "MotorB_groupBox";
+            this.MotorB_groupBox.Size = new System.Drawing.Size(122, 101);
+            this.MotorB_groupBox.TabIndex = 4;
+            this.MotorB_groupBox.TabStop = false;
+            this.MotorB_groupBox.Text = "Motor B";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Speed: ";
+            // 
+            // MotorB_Speed_TextBox
+            // 
+            this.MotorB_Speed_TextBox.Location = new System.Drawing.Point(43, 71);
+            this.MotorB_Speed_TextBox.Name = "MotorB_Speed_TextBox";
+            this.MotorB_Speed_TextBox.Size = new System.Drawing.Size(71, 20);
+            this.MotorB_Speed_TextBox.TabIndex = 3;
+            this.MotorB_Speed_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // MotorB_Right_btn
+            // 
+            this.MotorB_Right_btn.Location = new System.Drawing.Point(63, 19);
+            this.MotorB_Right_btn.Name = "MotorB_Right_btn";
+            this.MotorB_Right_btn.Size = new System.Drawing.Size(51, 50);
+            this.MotorB_Right_btn.TabIndex = 2;
+            this.MotorB_Right_btn.Text = "Right";
+            this.MotorB_Right_btn.UseVisualStyleBackColor = true;
+            this.MotorB_Right_btn.Click += new System.EventHandler(this.MotorB_Right_btn_Click);
+            // 
+            // MotorB_Left_btn
+            // 
+            this.MotorB_Left_btn.Location = new System.Drawing.Point(6, 19);
+            this.MotorB_Left_btn.Name = "MotorB_Left_btn";
+            this.MotorB_Left_btn.Size = new System.Drawing.Size(51, 50);
+            this.MotorB_Left_btn.TabIndex = 2;
+            this.MotorB_Left_btn.Text = "Left";
+            this.MotorB_Left_btn.UseVisualStyleBackColor = true;
+            // 
+            // MotorA_groupBox
+            // 
+            this.MotorA_groupBox.Controls.Add(this.label3);
+            this.MotorA_groupBox.Controls.Add(this.MotorA_Speed_TextBox);
+            this.MotorA_groupBox.Controls.Add(this.MotorA_Left_btn);
+            this.MotorA_groupBox.Controls.Add(this.MotorA_Right_btn);
+            this.MotorA_groupBox.Location = new System.Drawing.Point(21, 18);
+            this.MotorA_groupBox.Name = "MotorA_groupBox";
+            this.MotorA_groupBox.Size = new System.Drawing.Size(123, 101);
+            this.MotorA_groupBox.TabIndex = 3;
+            this.MotorA_groupBox.TabStop = false;
+            this.MotorA_groupBox.Text = "Motor A";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Speed: ";
+            // 
+            // MotorA_Speed_TextBox
+            // 
+            this.MotorA_Speed_TextBox.Location = new System.Drawing.Point(43, 71);
+            this.MotorA_Speed_TextBox.Name = "MotorA_Speed_TextBox";
+            this.MotorA_Speed_TextBox.Size = new System.Drawing.Size(71, 20);
+            this.MotorA_Speed_TextBox.TabIndex = 2;
+            this.MotorA_Speed_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // MotorA_Left_btn
+            // 
+            this.MotorA_Left_btn.Location = new System.Drawing.Point(6, 19);
+            this.MotorA_Left_btn.Name = "MotorA_Left_btn";
+            this.MotorA_Left_btn.Size = new System.Drawing.Size(51, 50);
+            this.MotorA_Left_btn.TabIndex = 0;
+            this.MotorA_Left_btn.Text = "Left";
+            this.MotorA_Left_btn.UseVisualStyleBackColor = true;
+            this.MotorA_Left_btn.Click += new System.EventHandler(this.MotorA_Left_btn_Click);
+            // 
+            // MotorA_Right_btn
+            // 
+            this.MotorA_Right_btn.Location = new System.Drawing.Point(63, 19);
+            this.MotorA_Right_btn.Name = "MotorA_Right_btn";
+            this.MotorA_Right_btn.Size = new System.Drawing.Size(51, 50);
+            this.MotorA_Right_btn.TabIndex = 1;
+            this.MotorA_Right_btn.Text = "Right";
+            this.MotorA_Right_btn.UseVisualStyleBackColor = true;
+            this.MotorA_Right_btn.Click += new System.EventHandler(this.MotorA_Right_btn_Click);
             // 
             // Port_Combobox
             // 
@@ -204,127 +329,14 @@
             this.General_Textbox.Size = new System.Drawing.Size(260, 82);
             this.General_Textbox.TabIndex = 6;
             // 
-            // tabPage3
+            // button1
             // 
-            this.tabPage3.Controls.Add(this.Stop_Motors_btn);
-            this.tabPage3.Controls.Add(this.MotorB_groupBox);
-            this.tabPage3.Controls.Add(this.MotorA_groupBox);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(704, 416);
-            this.tabPage3.TabIndex = 3;
-            this.tabPage3.Text = "Motor Control";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // MotorA_Left_btn
-            // 
-            this.MotorA_Left_btn.Location = new System.Drawing.Point(6, 19);
-            this.MotorA_Left_btn.Name = "MotorA_Left_btn";
-            this.MotorA_Left_btn.Size = new System.Drawing.Size(51, 50);
-            this.MotorA_Left_btn.TabIndex = 0;
-            this.MotorA_Left_btn.Text = "Left";
-            this.MotorA_Left_btn.UseVisualStyleBackColor = true;
-            this.MotorA_Left_btn.Click += new System.EventHandler(this.MotorA_Left_btn_Click);
-            // 
-            // MotorA_Right_btn
-            // 
-            this.MotorA_Right_btn.Location = new System.Drawing.Point(63, 19);
-            this.MotorA_Right_btn.Name = "MotorA_Right_btn";
-            this.MotorA_Right_btn.Size = new System.Drawing.Size(51, 50);
-            this.MotorA_Right_btn.TabIndex = 1;
-            this.MotorA_Right_btn.Text = "Right";
-            this.MotorA_Right_btn.UseVisualStyleBackColor = true;
-            this.MotorA_Right_btn.Click += new System.EventHandler(this.MotorA_Right_btn_Click);
-            // 
-            // MotorA_groupBox
-            // 
-            this.MotorA_groupBox.Controls.Add(this.label3);
-            this.MotorA_groupBox.Controls.Add(this.MotorA_Speed_TextBox);
-            this.MotorA_groupBox.Controls.Add(this.MotorA_Left_btn);
-            this.MotorA_groupBox.Controls.Add(this.MotorA_Right_btn);
-            this.MotorA_groupBox.Location = new System.Drawing.Point(21, 18);
-            this.MotorA_groupBox.Name = "MotorA_groupBox";
-            this.MotorA_groupBox.Size = new System.Drawing.Size(123, 101);
-            this.MotorA_groupBox.TabIndex = 3;
-            this.MotorA_groupBox.TabStop = false;
-            this.MotorA_groupBox.Text = "Motor A";
-            // 
-            // MotorB_groupBox
-            // 
-            this.MotorB_groupBox.Controls.Add(this.label4);
-            this.MotorB_groupBox.Controls.Add(this.MotorB_Speed_TextBox);
-            this.MotorB_groupBox.Controls.Add(this.MotorB_Right_btn);
-            this.MotorB_groupBox.Controls.Add(this.MotorB_Left_btn);
-            this.MotorB_groupBox.Location = new System.Drawing.Point(150, 18);
-            this.MotorB_groupBox.Name = "MotorB_groupBox";
-            this.MotorB_groupBox.Size = new System.Drawing.Size(122, 101);
-            this.MotorB_groupBox.TabIndex = 4;
-            this.MotorB_groupBox.TabStop = false;
-            this.MotorB_groupBox.Text = "Motor B";
-            // 
-            // MotorB_Left_btn
-            // 
-            this.MotorB_Left_btn.Location = new System.Drawing.Point(6, 19);
-            this.MotorB_Left_btn.Name = "MotorB_Left_btn";
-            this.MotorB_Left_btn.Size = new System.Drawing.Size(51, 50);
-            this.MotorB_Left_btn.TabIndex = 2;
-            this.MotorB_Left_btn.Text = "Left";
-            this.MotorB_Left_btn.UseVisualStyleBackColor = true;
-            // 
-            // MotorB_Right_btn
-            // 
-            this.MotorB_Right_btn.Location = new System.Drawing.Point(63, 19);
-            this.MotorB_Right_btn.Name = "MotorB_Right_btn";
-            this.MotorB_Right_btn.Size = new System.Drawing.Size(51, 50);
-            this.MotorB_Right_btn.TabIndex = 2;
-            this.MotorB_Right_btn.Text = "Right";
-            this.MotorB_Right_btn.UseVisualStyleBackColor = true;
-            this.MotorB_Right_btn.Click += new System.EventHandler(this.MotorB_Right_btn_Click);
-            // 
-            // MotorA_Speed_TextBox
-            // 
-            this.MotorA_Speed_TextBox.Location = new System.Drawing.Point(43, 71);
-            this.MotorA_Speed_TextBox.Name = "MotorA_Speed_TextBox";
-            this.MotorA_Speed_TextBox.Size = new System.Drawing.Size(71, 20);
-            this.MotorA_Speed_TextBox.TabIndex = 2;
-            this.MotorA_Speed_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // MotorB_Speed_TextBox
-            // 
-            this.MotorB_Speed_TextBox.Location = new System.Drawing.Point(43, 71);
-            this.MotorB_Speed_TextBox.Name = "MotorB_Speed_TextBox";
-            this.MotorB_Speed_TextBox.Size = new System.Drawing.Size(71, 20);
-            this.MotorB_Speed_TextBox.TabIndex = 3;
-            this.MotorB_Speed_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Stop_Motors_btn
-            // 
-            this.Stop_Motors_btn.Location = new System.Drawing.Point(51, 125);
-            this.Stop_Motors_btn.Name = "Stop_Motors_btn";
-            this.Stop_Motors_btn.Size = new System.Drawing.Size(48, 42);
-            this.Stop_Motors_btn.TabIndex = 5;
-            this.Stop_Motors_btn.Text = "Stop";
-            this.Stop_Motors_btn.UseVisualStyleBackColor = true;
-            this.Stop_Motors_btn.Click += new System.EventHandler(this.Stop_Motors_btn_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Speed: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Speed: ";
+            this.button1.Location = new System.Drawing.Point(373, 124);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -343,11 +355,12 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.MotorA_groupBox.ResumeLayout(false);
-            this.MotorA_groupBox.PerformLayout();
             this.MotorB_groupBox.ResumeLayout(false);
             this.MotorB_groupBox.PerformLayout();
+            this.MotorA_groupBox.ResumeLayout(false);
+            this.MotorA_groupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,6 +393,7 @@
         private System.Windows.Forms.Button Stop_Motors_btn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }
 
